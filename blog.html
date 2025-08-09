@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Blog placeholder page — opens from navbar in a new tab.
+    Keep this minimal; it shares styles with the main site via styles.css.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — Baibhav Kumar Pathak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="padding:40px">
+  <!-- Code-editor styled card with a blinking caret -->
+  <div class="editor-window reveal" style="max-width:800px; margin:auto;">
+    <div class="editor-chrome">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="title">posts/coming-soon.md</span>
+    </div>
+    <pre><code>// Coming soon...
+// Writing on IoT, AI/ML, and full‑stack engineering.
+
+$ echo "Hello, world"</code><span class="caret">|</span></pre>
+  </div>
+
+  <script>
+    // Trigger a simple reveal on load so the card fades in
+    document.querySelector('.editor-window').classList.add('visible');
+  </script>
+</body>
+</html>

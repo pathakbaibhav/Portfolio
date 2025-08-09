@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baibhav Pathak — Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background particles (drawn by script.js) -->
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+
+  <!-- =========================
+       Header / Navigation (glassmorphic, sticky)
+     ========================= -->
+  <header class="glass">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <div class="logo">BP</div>
+        <span>Baibhav Pathak</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#home">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+         <a href="blog.html" target="_blank" rel="noopener">Blog</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" id="themeToggle" href="#" aria-label="Toggle theme">🌗</a>
+        <a class="cta" href="https://github.com/pathakbaibhav" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======
+     ABOUT
+     ===== -->
+  <section id="home" class="section hero">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <p class="eyebrow">Software Engineer • IoT • AI/ML • Cloud</p>
+
+      <h1 class="hero-title">
+        <span class="gradient">I build dependable systems</span><br />
+        <span class="sub">that ship, scale, and stay up.</span>
+      </h1>
+
+      <!-- Summary with color highlights -->
+      <p class="lead reveal" style="transition-delay:120ms">
+        <span class="highlight">Software engineer with a taste for data-driven products.</span>
+        From simulated IoT fleets to real-time embedded applications, modern web dashboards,
+        and cloud-native services — I turn raw signals into reliable, scalable software.
+        Skilled across <span class="highlight">C++/SystemC</span>, <span class="highlight">Python</span>, and
+        full-stack development with <span class="highlight">React • Node • SQL • AWS</span>,
+        I focus on clean architecture and measurable impact.
+      </p>
+
+      <!-- Experience metric -->
+      <div class="metrics reveal">
+        <div class="metric">
+          <div class="icon" aria-hidden="true">🏅</div>
+          <h4>Experience</h4>
+          <div class="metric-sub">2+ years</div>
+          <div class="metric-note">Software Engineer</div>
+        </div>
+      </div>
+
+      <!-- Three quick stat chips -->
+      <div class="hero-stats">
+        <div class="stat"><b>Current Focus</b><span>AI Fleet Health Monitoring (in progress)</span></div>
+        <div class="stat"><b>Cloud</b><span>AWS • CI/CD • Containers</span></div>
+        <div class="stat"><b>Full-Stack</b><span>React • Node • SQL</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <div class="pfp-wrap glow-ring">
+        <img class="avatar" src="assets/img/about.jpg" alt="Baibhav profile photo" />
+      </div>
+
+      <!-- Typing line (script.js writes phrases here) -->
+      <div class="typing"><span id="typed"></span><span class="cursor">▍</span></div>
+
+      <!-- CTAs -->
+      <div class="actions">
+        <a href="#projects" class="cta glow">See My Work</a>
+        <a href="https://www.linkedin.com/in/baibhavkp/" target="_blank" rel="noopener" class="cta outline">Let’s Collaborate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========
+       SKILLS
+     ======== -->
+  <section id="skills" class="section skills">
+    <div class="skills-inner">
+      <div class="section-title reveal">
+        <h2>Skills</h2>
+        <span class="pill">Tools I actually use</span>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Core Programming & Scripting -->
+        <article class="skill-card reveal">
+          <h3>Core Programming &amp; Scripting</h3>
+          <div class="pill-list">
+            <a class="pill" href="#"><img src="assets/icons/c.svg" alt="" loading="lazy"><b>C</b></a>
+            <a class="pill" href="#"><img src="assets/icons/c++.svg" alt="" loading="lazy"><b>C++</b></a>
+            <a class="pill" href="#"><img src="assets/icons/python.svg" alt="" loading="lazy"><b>Python</b></a>
+            <a class="pill" href="#"><img src="assets/icons/git.svg" alt="" loading="lazy"><b>Git</b></a>
+          </div>
+        </article>
+
+        <!-- Frontend Development -->
+        <article class="skill-card reveal">
+          <h3>Frontend Development</h3>
+          <div class="pill-list">
+            <a class="pill" href="#"><img src="assets/icons/react.svg" alt="" loading="lazy"><b>React.js</b></a>
+            <a class="pill" href="#"><img src="assets/icons/html.svg" alt="" loading="lazy"><b>HTML</b></a>
+            <a class="pill" href="#"><img src="assets/icons/css.svg" alt="" loading="lazy"><b>CSS</b></a>
+            <a class="pill" href="#"><img src="assets/icons/javascript.svg" alt="" loading="lazy"><b>JavaScript</b></a>
+            <a class="pill" href="#"><img src="assets/icons/typescript.svg" alt="" loading="lazy"><b>TypeScript</b></a>
+          </div>
+        </article>
+
+        <!-- Backend & APIs -->
+        <article class="skill-card reveal">
+          <h3>Backend &amp; APIs</h3>
+          <div class="pill-list">
+            <a class="pill" href="#"><img src="assets/icons/node-js.svg" alt="" loading="lazy"><b>Node.js</b></a>
+            <a class="pill" href="#"><img src="assets/icons/rest-api.svg" alt="" loading="lazy"><b>REST APIs</b></a>
+            <a class="pill" href="#"><img src="assets/icons/postgresql.svg" alt="" loading="lazy"><b>PostgreSQL</b></a>
+            <a class="pill" href="#"><img src="assets/icons/mysql.svg" alt="" loading="lazy"><b>MySQL</b></a>
+            <a class="pill" href="#"><img src="assets/icons/mongodb.svg" alt="" loading="lazy"><b>MongoDB</b></a>
+          </div>
+        </article>
+
+        <!-- Embedded Systems & IoT -->
+        <article class="skill-card reveal">
+          <h3>Embedded Systems &amp; IoT</h3>
+          <div class="pill-list">
+            <a class="pill" href="#"><img src="assets/icons/embedded-c.png" alt="" loading="lazy"><b>Embedded C</b></a>
+            <a class="pill" href="#"><img src="assets/icons/arduino.svg" alt="" loading="lazy"><b>Arduino</b></a>
+            <a class="pill" href="#"><img src="assets/icons/raspberry-pi.svg" alt="" loading="lazy"><b>Raspberry&nbsp;Pi</b></a>
+            <a class="pill" href="#"><span class="badge">TCP</span><b>TCP/IP</b></a>
+            <a class="pill" href="#"><span class="badge">UDP</span><b>UDP</b></a>
+            <a class="pill" href="#"><img src="assets/icons/mqtt.png" alt="" loading="lazy"><b>MQTT</b></a>
+            <a class="pill" href="#"><img src="assets/icons/wifi.svg" alt="" loading="lazy"><b>Wi-Fi</b></a>
+            <a class="pill" href="#"><img src="assets/icons/bluetooth.svg" alt="" loading="lazy"><b>Bluetooth</b></a>
+          </div>
+        </article>
+
+        <!-- Cloud & DevOps -->
+        <article class="skill-card reveal">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="pill-list">
+            <a class="pill" href="#"><img src="assets/icons/aws.svg" alt="" loading="lazy"><b>AWS</b></a>
+            <a class="pill" href="#"><img src="assets/icons/docker.svg" alt="" loading="lazy"><b>Docker</b></a>
+            <a class="pill" href="#"><img src="assets/icons/jenkins.svg" alt="" loading="lazy"><b>Jenkins</b></a>
+            <a class="pill" href="#"><img src="assets/icons/githubactions.svg" alt="" loading="lazy"><b>GitHub Actions</b></a>
+          </div>
+        </article>
+
+        <!-- Tools & Practices -->
+        <article class="skill-card reveal">
+          <h3>Tools &amp; Practices</h3>
+          <div class="pill-list">
+            <a class="pill" href="#"><img src="assets/icons/github.svg" alt="" loading="lazy"><b>GitHub</b></a>
+            <a class="pill" href="#"><img src="assets/icons/vs-code.svg" alt="" loading="lazy"><b>VS Code</b></a>
+            <a class="pill" href="#"><img src="assets/icons/jira.svg" alt="" loading="lazy"><b>JIRA</b></a>
+            <a class="pill" href="#"><img src="assets/icons/agile.png" alt="" loading="lazy"><b>Agile</b></a>
+            <a class="pill" href="#"><span class="badge">OOP</span><b>OOP</b></a>
+            <a class="pill" href="#"><span class="badge">ALG</span><b>Algorithms</b></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================
+     EXPERIENCE
+     ============== -->
+  <section id="experience" class="section experience">
+    <div class="experience-inner">
+  
+      <!-- Section title uses gradient (already styled globally) -->
+      <div class="section-title reveal">
+        <h2>Experience</h2>
+        <span class="pill">What I shipped</span>
+      </div>
+  
+      <!-- Single role card -->
+      <article class="exp-card reveal">
+        <!-- Company logo -->
+        <div class="company-badge" aria-hidden="true">
+          <!-- You uploaded TF-Logo.svg -->
+          <img src="assets/img/TF-Logo.svg" alt="Thermo Fisher Scientific logo" loading="lazy" />
+        </div>
+  
+        <div class="exp-body">
+          <!-- Role + company -->
+          <h3 class="exp-title">
+            <span class="gradient">Software Engineer — Packaging &amp; Automation</span>
+          </h3>
+          <div class="exp-meta">
+            <span class="company">ThermoFisher Scientific</span>
+            <span class="dot">•</span>
+            <span class="location">Bangalore, India</span>
+            <span class="dot">•</span>
+            <span class="dates">Jan 2021 — Aug 2023</span>
+          </div>
+  
+          <!-- Impact bullets-->
+          <ul class="exp-points">
+            <li>Developed &amp; deployed <b>50+ software packages</b> for macOS &amp; Windows
+                (AdminStudio, Shell, SCCM) with <b>100% seamless integration</b>.</li>
+            <li>Automated test &amp; deployment with <b>PowerShell</b>, <b>Python</b>, and <b>VBScript</b>,
+                cutting manual work by <b>30%</b> and improving reliability pre-UAT.</li>
+            <li>Resolved complex 3rd-level packaging issues with a <b>95% success rate</b>,
+                stabilizing operations for <b>200+</b> Autopilot &amp; Azure users.</li>
+            <li>Built data extraction tools against <b>Microsoft Graph / Azure DB</b>,
+                improving data accuracy by <b>35%</b> and enabling data-driven decisions.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =========================
+     EDUCATION (logos + degree + subjects + links)
+     ========================= -->
+  <section id="education" class="section education">
+    <div class="education-inner">
+  
+      <!-- Section title (already gradient via global CSS) -->
+      <div class="section-title reveal">
+        <h2>Education</h2>
+        <span class="pill">Built on fundamentals</span>
+      </div>
+  
+      <div class="edu-grid">
+  
+        <!-- Northeastern University -->
+        <article class="edu-card reveal">
+          <div class="edu-logo">
+            <!-- Make the logo clickable to open your degree PDF -->
+            <a href="assets/docs/Certificate.pdf" target="_blank" rel="noopener" aria-label="Open degree document in new tab">
+              <img src="assets/img/NU-Logo.png" alt="Northeastern University logo" loading="lazy">
+            </a>
+          </div>
+  
+          <div class="edu-body">
+            <h3 class="edu-title">
+              <span class="gradient">Northeastern University</span>
+            </h3>
+            <div class="edu-meta">
+              <span class="degree">M.S. in Internet of Things</span>
+              <span class="dot">•</span>
+              <span class="location">Boston, MA, USA</span>
+              <span class="dot">•</span>
+              <!-- TODO: replace with exact dates -->
+              <span class="dates">Aug 2023 — May 2025</span>
+            </div>
+  
+            <!-- Core subjects pulled from your resume -->
+            <div class="edu-subtitle">Core Subjects</div>
+            <ul class="edu-points">
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Wireless Sensors and Networks in IoT</li>
+              <li>Mobile and Wireless Networks</li>
+              <li>Machine Learning &amp; Pattern Recognition</li>
+              <li>Hardware/Software Co-Design</li>
+              <li>Network Security</li>
+            </ul>
+  
+            <!-- Actions: open degree and official validation -->
+            <div class="edu-actions">
+              <a class="cta outline" href="assets/docs/Certificate.pdf" target="_blank" rel="noopener">View Degree</a>
+            </div>
+          </div>
+        </article>
+  
+        <!-- Visvesvaraya Technological University -->
+        <article class="edu-card reveal">
+          <div class="edu-logo">
+            <a href="assets/docs/Degree.pdf" target="_blank" rel="noopener" aria-label="Open certificate in new tab">
+              <img src="assets/img/VTU-Logo.png" alt="Visvesvaraya Technological University logo" loading="lazy">
+            </a>
+          </div>
+  
+          <div class="edu-body">
+            <h3 class="edu-title">
+              <span class="gradient">Visvesvaraya Technological University</span>
+            </h3>
+            <div class="edu-meta">
+              <span class="degree">B.Tech in Computer Science</span>
+              <span class="dot">•</span>
+              <span class="location">Karnataka, India</span>
+              <span class="dot">•</span>
+              <!-- TODO: replace with exact dates -->
+              <span class="dates">Aug 2016 — Jun 2020</span>
+            </div>
+  
+            <!-- Core subjects pulled from your resume -->
+            <div class="edu-subtitle">Core Subjects</div>
+            <ul class="edu-points">
+              <li>Operating Systems</li>
+              <li>Machine Learning</li>
+              <li>Computer Networks</li>
+              <li>Python</li>
+              <li>Computer Architecture</li>
+            </ul>
+  
+            <!-- Actions -->
+            <div class="edu-actions">
+              <a class="cta outline" href="assets/docs/Degree.pdf" target="_blank" rel="noopener">View Degree</a>
+            </div>
+          </div>
+        </article>
+  
+      </div><!-- /edu-grid -->
+    </div><!-- /education-inner -->
+  </section>
+
+  <!-- =========
+     PROJECTS 
+     ======= -->
+  <section id="projects" class="section projects">
+    <div class="projects-inner">
+  
+      <div class="section-title reveal">
+        <h2>Projects</h2>
+        <span class="pill">Selected Work</span>
+      </div>
+  
+      <!-- Arrow controls -->
+      <div class="hscroll-controls">
+        <button class="scroll-btn prev" aria-label="Scroll left">‹</button>
+        <button class="scroll-btn next" aria-label="Scroll right">›</button>
+      </div>
+  
+      <!-- Horizontal track with large, vertical cards -->
+      <div class="project-track" data-hscroll>
+        <!-- 1) AutoPulse -->
+        <article class="project-card snap">
+          <header class="project-head">
+            <h3 class="proj-title"><span class="gradient">AutoPulse — AI Fleet Health Management</span></h3>
+            <span class="badge status">in&nbsp;progress</span>
+          </header>
+  
+          <p class="project-desc">
+            Simulated OBD-II telemetry + LSTM forecasts to flag anomalies before breakdowns.
+            Focus on <b>downtime reduction</b> via targeted alerts and failure signatures.
+          </p>
+  
+          <ul class="project-points">
+            <li>Streamed sensor frames over <b>MQTT</b>; feature windowing for sequence models.</li>
+            <li><b>LSTM</b> baseline; exploring autoencoder thresholds for anomaly scoring.</li>
+            <li>Operational dashboard (React) with trends, alerts, and drill-downs.</li>
+          </ul>
+  
+          <div class="tags">
+            <span>Python</span><span>LSTM</span><span>MQTT</span><span>React</span>
+            <span>PostgreSQL</span><span>AWS</span>
+          </div>
+  
+          <div class="project-actions">
+            <a class="cta outline" href="https://github.com/pathakbaibhav/AutoPulse" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
+  
+        <!-- 2) Vision Transformer SoC -->
+        <article class="project-card snap">
+          <header class="project-head">
+            <h3 class="proj-title"><span class="gradient">Vision Transformer SoC</span></h3>
+          </header>
+  
+          <p class="project-desc">
+            SystemC SoC for image classification with modular <b>patch embeddings</b>, transformer
+            blocks, and MLP head; explored fixed-point quantization for edge.
+          </p>
+  
+          <ul class="project-points">
+            <li>Integrated pretrained ViT weights &amp; parallelized embedding pipeline.</li>
+            <li>Fixed-point arithmetic sweep for <b>FPGA feasibility</b>.</li>
+            <li>Clock-accurate simulation &amp; trace for throughput/latency study.</li>
+          </ul>
+  
+          <div class="tags">
+            <span>SystemC</span><span>C++</span><span>Vision Transformer</span>
+            <span>Fixed-Point</span><span>FPGA (feasibility)</span>
+          </div>
+  
+          <div class="project-actions">
+            <a class="cta outline" href="https://github.com/pathakbaibhav/Project-VIT-SystemC" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
+  
+        <!-- 3) ASL Interpretation Tool -->
+        <article class="project-card snap">
+          <header class="project-head">
+            <h3 class="proj-title"><span class="gradient">ASL Interpretation Tool</span></h3>
+          </header>
+  
+          <p class="project-desc">
+            Real-time ASL interpreter using OpenCV + MediaPipe with &gt;90% accuracy; boosted via
+            <b>Random Forest</b> classifier and lightweight web UI.
+          </p>
+  
+          <ul class="project-points">
+            <li>Key-point extraction pipeline with temporal smoothing.</li>
+            <li>Model comparison (SVM vs RF) — RF improved accuracy ~20%.</li>
+            <li>Browser preview for immediate feedback.</li>
+          </ul>
+  
+          <div class="tags">
+            <span>TensorFlow</span><span>OpenCV</span><span>MediaPipe</span>
+            <span>Random Forest</span><span>Python</span><span>HTML/CSS/JS</span>
+          </div>
+  
+          <div class="project-actions">
+            <a class="cta outline" href="https://github.com/pathakbaibhav/ASL-Interpretation-And-Learning-Tool" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
+  
+        <!-- 4) Boston Subway Network Visualization -->
+        <article class="project-card snap">
+          <header class="project-head">
+            <h3 class="proj-title"><span class="gradient">Boston Subway Network Visualization</span></h3>
+          </header>
+  
+          <p class="project-desc">
+            Interactive Processing sketch for MBTA routes with <b>shortest-path</b> planning and
+            live data refresh from Python scraper.
+          </p>
+  
+          <ul class="project-points">
+            <li>Graph model with stations/edges; Dijkstra for path queries.</li>
+            <li>CSV ingest from MBTA feeds; basic delay annotations.</li>
+            <li>Zoom/pan interactions &amp; color-coded lines.</li>
+          </ul>
+  
+          <div class="tags">
+            <span>Processing</span><span>Python</span><span>Graph Theory</span>
+            <span>Shortest Path</span><span>MBTA</span>
+          </div>
+  
+          <div class="project-actions">
+            <a class="cta outline" href="https://github.com/pathakbaibhav/Boston-Subway-Network-Visualization" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
+  
+        <!-- 5) Cellular Network Drone -->
+        <article class="project-card snap">
+          <header class="project-head">
+            <h3 class="proj-title"><span class="gradient">Cellular Network Drone</span></h3>
+          </header>
+  
+          <p class="project-desc">
+            Quadcopter with extended range via <b>cellular towers</b>; optimized SPI/I²C transfer
+            (~25% faster) and onboard camera streaming.
+          </p>
+  
+          <ul class="project-points">
+            <li>Arduino flight control + Python telemetry bridge.</li>
+            <li>Network stack tuning for uplink stability.</li>
+            <li>Modular sensor bay for field experiments.</li>
+          </ul>
+  
+          <div class="tags">
+            <span>Arduino</span><span>Python</span><span>C++</span>
+            <span>SPI/I²C</span><span>Networking</span><span>Camera</span>
+          </div>
+  
+          <div class="project-actions">
+            
+          </div>
+        </article>
+  
+        <!-- 6) Personal Portfolio -->
+        <article class="project-card snap">
+          <header class="project-head">
+            <h3 class="proj-title"><span class="gradient">Personal Portfolio (this site)</span></h3>
+          </header>
+  
+          <p class="project-desc">
+            Dark, glassy, responsive portfolio with theme toggle, typing line, particles, and
+            snap-scroll sections. Built for clarity and speed.
+          </p>
+  
+          <ul class="project-points">
+            <li>Semantic HTML + modern CSS + vanilla JS.</li>
+            <li>Keyboard-friendly nav and reduced-motion fallbacks.</li>
+            <li>Modular sections for easy iteration.</li>
+          </ul>
+  
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Accessibility</span><span>Responsive</span>
+          </div>
+  
+          <div class="project-actions">
+            <a class="cta outline" href="https://github.com/pathakbaibhav" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+     ACHIEVEMENTS
+     ========================= -->
+  <section id="achievements" class="section achievements">
+    <div class="achievements-inner">
+  
+      <div class="section-title reveal">
+        <h2>Achievements</h2>
+        <span class="pill">Results that matter</span>
+      </div>
+  
+      <div class="achieve-row" role="list">
+        <!-- 1) Academic Excellence -->
+        <article class="achieve-card reveal" role="listitem" tabindex="0" aria-expanded="false">
+          <div class="achieve-head">
+            <div class="achieve-icon" aria-hidden="true">🎓</div>
+            <h3 class="achieve-title"><span class="gradient">Academic Excellence</span></h3>
+          </div>
+          <!-- Tagline (always visible) -->
+          <p class="achieve-tagline">Turning knowledge into lasting impact</p>
+          <!-- Expanded body -->
+          <div class="achieve-body">
+            <ul>
+              <li>M.S. (IoT) strengths across <b>DSA, ML/PR, HW/SW Co-Design</b>, and <b>Network Security</b>.</li>
+              <li><b>Vision Transformer SoC</b> in SystemC; fixed-point study for FPGA feasibility.</li>
+              <li><b>ASL Interpretation Tool</b> (OpenCV/MediaPipe); &gt;90% recognition accuracy.</li>
+            </ul>
+          </div>
+        </article>
+  
+        <!-- 2) Professional Impact -->
+        <article class="achieve-card reveal" role="listitem" tabindex="0" aria-expanded="false">
+          <div class="achieve-head">
+            <div class="achieve-icon" aria-hidden="true">🏅</div>
+            <h3 class="achieve-title"><span class="gradient">Professional Impact</span></h3>
+          </div>
+          <p class="achieve-tagline">Delivering results that drive change</p>
+          <div class="achieve-body">
+            <ul>
+              <li>Shipped <b>50+</b> macOS/Windows packages (AdminStudio, Shell, SCCM) with seamless rollouts.</li>
+              <li>Automation in <b>PowerShell/Python</b> cut manual effort ~<b>30%</b>; better pre-UAT reliability.</li>
+              <li>Resolved complex L3 issues with ~<b>95%</b> success, supporting <b>200+ Azure/Autopilot</b> users.</li>
+            </ul>
+          </div>
+        </article>
+  
+        <!-- 3) Innovation & Research -->
+        <article class="achieve-card reveal" role="listitem" tabindex="0" aria-expanded="false">
+          <div class="achieve-head">
+            <div class="achieve-icon" aria-hidden="true">🧪</div>
+            <h3 class="achieve-title"><span class="gradient">Innovation &amp; Research</span></h3>
+          </div>
+          <p class="achieve-tagline">Exploring ideas beyond the horizon</p>
+          <div class="achieve-body">
+            <ul>
+              <li><b>AutoPulse</b>: IoT + LSTM anomaly forecasting; MQTT streams + React dashboard.</li>
+              <li>Graph-based <b>MBTA visualization</b> with shortest-path + Python ingest.</li>
+              <li>Prototyped <b>edge pipelines</b> (Raspberry Pi • MQTT • containers).</li>
+            </ul>
+          </div>
+        </article>
+  
+        <!-- 4) Certification -->
+        <article class="achieve-card reveal" role="listitem" tabindex="0" aria-expanded="false">
+          <div class="achieve-head">
+            <div class="achieve-icon" aria-hidden="true">📜</div>
+            <h3 class="achieve-title"><span class="gradient">Certification</span></h3>
+          </div>
+          <p class="achieve-tagline">Committed to lifelong learning</p>
+          <div class="achieve-body">
+            <ul class="no-bullets">
+              <li class="cert-line">
+                <b>AWS Cloud</b>
+                <span class="badge status inline">in&nbsp;progress</span>
+              </li>
+            </ul>
+            <div class="achieve-actions">
+              <!-- Replace with real URL when ready -->
+              <a class="cta outline" href="#" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </article>
+      </div><!-- /achieve-row -->
+    </div>
+  </section>
+
+  <!-- =========================
+     CONTACT
+     ========================= -->
+  <section id="contact" class="section contact">
+    <div class="contact-inner">
+  
+      <div class="section-title reveal">
+        <h2>Contact</h2>
+        <span class="pill">Let’s build something</span>
+      </div>
+  
+      <div class="contact-grid">
+  
+        <!-- GitHub -->
+        <a class="contact-card reveal" href="https://github.com/pathakbaibhav" target="_blank" rel="noopener" aria-label="Open GitHub in new tab">
+          <div class="contact-icon">
+            <img src="assets/icons/github.svg" alt="" loading="lazy">
+          </div>
+          <div class="contact-text">
+            <b class="contact-title"><span class="gradient">GitHub</span></b>
+            <span class="contact-sub">@pathakbaibhav</span>
+          </div>
+        </a>
+  
+        <!-- LinkedIn -->
+        <a class="contact-card reveal" href="https://www.linkedin.com/in/baibhavkp/" target="_blank" rel="noopener" aria-label="Open LinkedIn in new tab">
+          <div class="contact-icon">
+            <img src="assets/icons/linkedin.svg" alt="" loading="lazy">
+          </div>
+          <div class="contact-text">
+            <b class="contact-title"><span class="gradient">LinkedIn</span></b>
+            <span class="contact-sub">/in/baibhavkp</span>
+          </div>
+        </a>
+  
+        <!-- Instagram -->
+        <a class="contact-card reveal" href="https://www.instagram.com/baibhav_pathak/" target="_blank" rel="noopener" aria-label="Open Instagram in new tab">
+          <div class="contact-icon">
+            <img src="assets/icons/instagram.svg" alt="" loading="lazy">
+          </div>
+          <div class="contact-text">
+            <b class="contact-title"><span class="gradient">Instagram</span></b>
+            <span class="contact-sub">@baibhav_pathak</span>
+          </div>
+        </a>
+  
+        <!-- Email (shows address + mailto + copy) -->
+        <div class="contact-card reveal email-card" role="group" aria-label="Email Baibhav">
+          <div class="contact-icon">
+            <img src="assets/icons/mail.svg" alt="" loading="lazy">
+          </div>
+          <div class="contact-text">
+            <b class="contact-title"><span class="gradient">Email</span></b>
+            <!-- Visible email for users without mail client -->
+            <span class="contact-sub" id="emailText">pathak.ba@northeastern.edu</span>
+          </div>
+          <div class="contact-actions">
+            <a class="cta mini" href="mailto:pathak.ba@northeastern.edu" aria-label="Open default mail client">Compose</a>
+            <button class="cta mini outline" id="copyEmailBtn" type="button" aria-label="Copy email to clipboard" data-copy="#emailText">Copy</button>
+          </div>
+        </div>
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+  <!-- =========================
+     FOOTER
+     ========================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+  
+      <div class="foot-brand">
+        <div class="logo">BP</div>
+        <div class="foot-title">
+          <b class="gradient">Baibhav Pathak</b>
+          <span class="foot-sub">Software Engineer • IoT • AI/ML • Cloud</span>
+        </div>
+      </div>
+  
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#home">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <a href="blog.html" target="_blank" rel="noopener">Blog</a>
+      </nav>
+  
+      <div class="foot-social">
+        <a href="https://github.com/pathakbaibhav" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/icons/github.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/baibhavkp/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/icons/linkedin.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/baibhav_pathak/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="assets/icons/instagram.svg" alt="">
+        </a>
+        <a href="mailto:pathak.ba@northeastern.edu" aria-label="Email">
+          <img src="assets/icons/mail.svg" alt="">
+        </a>
+      </div>
+  
+      <div class="foot-legal">
+        <span>© <span id="year"></span> Baibhav Pathak. All rights reserved.</span>
+        <span class="sep">•</span>
+        <span>Built with semantic HTML, modern CSS, and vanilla JS.</span>
+      </div>
+    </div>
+  
+    <!-- Back to top (round) with circular progress -->
+    <button id="toTop" aria-label="Back to top">
+      <svg viewBox="0 0 36 36" aria-hidden="true">
+        <!-- Circular path (stroke is animated by JS) -->
+        <path id="progress" d=""></path>
+      </svg>
+      <span class="chev">↑</span>
+    </button>
+  
+    <!-- gradient for the ring stroke (fallback = solid brand color) -->
+    <svg width="0" height="0" style="position:absolute"><defs>
+      <linearGradient id="_ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="var(--brand)"/>
+        <stop offset="100%" stop-color="var(--brand2)"/>
+      </linearGradient>
+    </defs></svg>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

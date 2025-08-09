@@ -23,6 +23,10 @@ button** with a **scroll progress indicator**.
     -   Achievements expand to reveal details
     -   Contact buttons expand and highlight on hover
     -   Smooth scroll navigation
+-   **Circular Back to Top Button**:
+    -   Always visible
+    -   Shows scroll progress as a ring filling
+    -   Smooth scroll to top on click
 
 ------------------------------------------------------------------------
 
@@ -31,6 +35,7 @@ button** with a **scroll progress indicator**.
 -   **HTML5**
 -   **CSS3** (Flexbox, Grid, Animations, Transitions)
 -   **JavaScript (ES6)** --- for interactivity
+-   **SVG** --- for circular progress ring
 
 ------------------------------------------------------------------------
 
@@ -41,7 +46,7 @@ button** with a **scroll progress indicator**.
 ├── index.html      # Main HTML structure
 ├── styles.css      # All styling rules
 ├── script.js       # JavaScript functionality
-└── assets/         # Images, docs, icons (optional)
+└── assets/         # Images, logos, icons (optional)
 ```
 
 ------------------------------------------------------------------------
@@ -51,7 +56,7 @@ button** with a **scroll progress indicator**.
 1.  **Clone or Download** this repository:
 
     ``` bash
-    git clone https://github.com/pathabaibhav/portfolio.git
+    git clone https://github.com/yourusername/portfolio.git
     ```
 
 2.  **Open** `index.html` in your preferred browser.
