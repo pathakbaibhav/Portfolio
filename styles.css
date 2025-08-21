@@ -150,6 +150,11 @@ nav[aria-label="Primary"] .cta:hover{ filter:brightness(1.08); transform: transl
 .cta.outline{ color:var(--brand); border-color:var(--brand); background:transparent; }
 .cta:hover{ filter:brightness(1.05); transform: translateY(-1px); }
 
+/* Download Resume CTA */
+.cta.resume {display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--brand), var(--brand2)); border: none; color: #fff; font-weight: 600; transition: transform 0.2s ease, background 0.3s ease;}
+.cta.resume:hover {transform: scale(1.08); background: linear-gradient(135deg, var(--brand2), var(--brand));}
+.cta.resume i {font-size: 16px;}
+
 /* ============================================================
    SECTION TITLE (shared)
    ============================================================ */
